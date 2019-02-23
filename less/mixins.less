@@ -1,0 +1,29 @@
+.spin {
+    -webkit-transition: all 0.333s ease-in-out;
+    -moz-transition: all 0.333s ease-in-out;
+    -o-transition: all 0.333s ease-in-out;
+    transition: all 0.333s ease-in-out;
+}
+.spin:hover {
+    -webkit-transform: rotate(180deg) scale(1.1);
+    -moz-transform: rotate(180deg) scale(1.1);
+    -o-transform: rotate(180deg) scale(1.1);
+    transform: rotate(180deg) scale(1.1);
+}
+
+p.strokeme
+{
+	font-size: 22px;
+	font-weight: 700;
+	-webkit-text-stroke: 1px @light;
+	color: @dark;
+	text-shadow:
+	-1px -1px 0 @light,
+	1px -1px 0 @light,
+	-1px 1px 0 @light,
+	1px 1px 0 @light;
+}
+
+h3 .fa {
+	color: @button;
+}

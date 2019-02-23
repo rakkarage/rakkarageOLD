@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Thank you for your time and consideration. :) -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>David Alexander Henry</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<style>
+		:root {
+			--color-a: gainsboro;
+			--color-b: lightgray;
+			--color-c: white;
+			--color-d: gray;
+			--highlight: #aadd00;
+			--font-size: 1em;
+			--font-size-large: 150%;
+			--font-size-small: 75%;
+			--padding-html: .5em;
+			--padding: .5em;
+			--padding-ul: 1em;
+			--corner: 33%;
+			--border: dotted 1px var(--color-d);
+			--side: 7em;
+		}
+
+		html {
+			background-color: var(--color-d);
+			font-family: Ubuntu, sans-serif;
+			font-size: var(--font-size);
+			padding: var(--padding-html);
+		}
+
+		li ul {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		ul {
+			list-style-type: disc;
+			margin: var(--padding) 0 var(--padding) var(--padding);
+			padding: 0 0 0 var(--padding);
+		}
+
+		body {
+			margin: auto;
+			max-width: 1200px;
+		}
+
+		#resume {
+			display: grid;
+		}
+
+		#head {
+			display: grid;
+		}
+
+		#foot {
+			display: grid;
+			background-color: var(--color-a);
+			text-align: center;
+			font-size: var(--font-size-small);
+			border-radius: 0 0 var(--corner) 0;
+		}
+
+		#name {
+			background-color: var(--color-a);
+			grid-area: 1 / 1 / 2 / 3;
+			font-size: var(--font-size-large);
+			font-weight: bold;
+			text-shadow: 1px 1px 1px var(--color-c);
+			text-align: right;
+			padding: var(--padding) var(--padding) 0 var(--padding);
+			border-radius: var(--corner) 0 0 0;
+		}
+
+		#description {
+			background-color: var(--color-a);
+			grid-area: 2 / 1 / 3 / 3;
+			text-align: right;
+			padding: var(--padding);
+		}
+
+		#description a {
+			background-color: var(--highlight);
+			white-space: nowrap;
+		}
+
+		#contact {
+			background-color: var(--color-b);
+			grid-area: 1 / 3 / 3 / 4;
+			display: flex;
+			align-items: center;
+			padding: var(--padding);
+			font-size: var(--font-size-small);
+		}
+
+		#expertise {
+			background-color: var(--color-c);
+			display: grid;
+			grid-template-columns: var(--side) auto;
+			padding: var(--padding) 0;
+		}
+
+		#expertise-title {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		#expertise ul {
+			margin: 0 var(--padding-ul);
+		}
+
+		.position {
+			background-color: var(--color-c);
+			display: grid;
+			grid-template-columns: var(--side) auto auto;
+			border-top: var(--border);
+			padding: var(--padding) 0;
+		}
+
+		.position ul {
+			margin-bottom: 0;
+		}
+
+		.title {
+			grid-area: 1 / 1 / 2 / 2;
+			padding: 0 var(--padding);
+			border-right: var(--border);
+			font-weight: bold;
+			font-size: var(--font-size-small);
+			text-align: right;
+		}
+
+		.location {
+			grid-area: 1 / 2 / 1 / 3;
+			padding: 0 var(--padding);
+			font-weight: bold;
+		}
+
+		.link {
+			grid-area: 1 / 3 / 1 / 4;
+			padding: 0 var(--padding);
+			text-align: right;
+		}
+
+		.date {
+			grid-area: 2 / 1 / 2 / 2;
+			padding: 0 var(--padding);
+			border-right: var(--border);
+			font-size: var(--font-size-small);
+			white-space: nowrap;
+			text-align: right;
+		}
+
+		.description {
+			grid-area: 2 / 2 / 2 / 4;
+			padding: 0 var(--padding);
+		}
+
+		@media (max-width: 800px) {
+			.hide {
+				display: none;
+				visibility: hidden;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="resume">
+		<div id="head">
+			<div id="name">David<span class="hide">&nbsp;Alexander</span>&nbsp;Henry</div>
+			<div id="description">
+				Adaptive <b>software engineer</b> available to help design, develop, test, deploy, and support your software projects.<br><br>
+				<a href="https://github.com/rakkarage" target="_blank" title="github profile"><i class="fab fa-github"></i>&nbsp;github/rakkarage</a>
+				<a href="https://stackoverflow.com/story/rakkarage" target="_blank" title="stack overflow profile"><i class="fab fa-stack-overflow"></i>&nbsp;stackoverflow/rakkarage</a>
+			</div>
+			<div id="contact">
+				<div>
+					<div class="email"><a href="mailto:davidahenry@gmail.com" target="_blank" title="email me">davidahenry@gmail.com</a></div>
+					<div class="phone"><a href="tel:+1-647-784-2019" title="call me">1 (647) 784-2019</a></div>
+					<div class="address">303-204 Kingston Road<br>Toronto, Ontario<br>M4L 1S7, Canada</div>
+				</div>
+			</div>
+		</div>
+		<div id="expertise">
+			<div id="expertise-title" class="title">Expertise&nbsp;<i class="fa fa-book"></i></div>
+			<div id="expertise-description">
+				<ul>
+					<li><b>Language:</b> C, Objective-C, C++, C#, <abbr title="Visual Basic">VB</abbr>, JavaScript,
+						<abbr title="Hyper Text Markup Language">HTML</abbr> and
+						<abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Extensible Application Markup Language">XAML</abbr>,
+						Lua</li>
+					<li><b><abbr title="Application Programming Interface">API</abbr>:</b> .NET, <abbr title="Language-Integrated Query">LINQ</abbr>,
+						<abbr title="REpresentational State Transfer">REST</abbr>, <abbr title="Microsoft Foundation Class">MFC</abbr>,
+						<abbr title="Standard Template Library">STL</abbr>, DirectX, OpenGL</li>
+					<li><b>Database:</b> <abbr title="Structured Query Language">SQL</abbr> Server, Access, FoxPro,
+						<abbr title="eXtensible Markup Language">XML</abbr>, <abbr title="YAML Ain't Markup Language">YAML</abbr>,
+						<abbr title="JavaScript Object Notation">JSON</abbr>, <abbr title="Comma Separated Values">CSV</abbr>, Parse,
+						Firebase</li>
+					<li><b>Editor:</b> Visual Studio / Code, XCode, Android Studio, Unity, MonoDevelop</li>
+					<li><b>Version Control:</b> Git, <abbr title="Subversion">SVN</abbr>, <abbr title="Concurrent Versioning System">CVS</abbr>,
+						<abbr title="Visual SourceSafe">VSS</abbr></li>
+					<li><b><abbr title="Operating System">OS</abbr>:</b> Windows, OSX, UNIX, Windows Phone, iOS, Android</li>
+					<li><b>Software:</b> Office, Docs, Photoshop, <abbr title="GNU Image Manipulation Program">GIMP</abbr></li>
+				</ul>
+			</div>
+		</div>
+		<div class="position">
+			<div class="title">Student&nbsp;<i class="fas fa-university"></i></div>
+			<div class="location">Unity<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="https://certification.unity.com/" target="_blank" title="visit unity.com">unity.com</a></div>
+			<div class="date">Dec 2018</div>
+			<div class="description">Unity Certified Programmer</div>
+		</div>
+		<div class="position">
+			<div class="title">Volunteer&nbsp;<i class="fas fa-hands-helping"></i></div>
+			<div class="location">Neighbourhood Link<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="http://neighbourhoodlink.org/" target="_blank" title="visit neighbourhoodlink.org">neighbourhoodlink.org</a></div>
+			<div class="date">Since 2017</div>
+			<div class="description">Working with a team, helping clients at food bank, and serving community meals.</div>
+		</div>
+		<div class="position">
+			<div class="title">Developer&nbsp;<i class="fas fa-laptop-code"></i></div>
+			<div class="location">Henry Software<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="http://henrysoftware.ca/" target="_blank" title="visit henrysoftware.ca">henrysoftware.ca</a></div>
+			<div class="date">Since 2012</div>
+			<div class="description">Develop games and game assets using Unity, C#, and Visual Studio Code.</div>
+		</div>
+		<div class="position">
+			<div class="title">Student&nbsp;<i class="fas fa-university"></i></div>
+			<div class="location">MicroSkills<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="http://microskills.ca/" target="_blank" title="visit microskills.ca">microskills.ca</a></div>
+			<div class="date">2010</div>
+			<div class="description">Microsoft Certified Solutions Associate</div>
+		</div>
+		<div class="position">
+			<div class="title">Crewman&nbsp;<i class="fas fa-hammer"></i></i></div>
+			<div class="location">AAA1 Roofing<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"></div>
+			<div class="date">2005&ndash;2009</div>
+			<div class="description">Assisted with installation, repair, and cleanup.</div>
+		</div>
+		<div class="position">
+			<div class="title">Developer&nbsp;<i class="fas fa-laptop-code"></i></div>
+			<div class="location">CaseWare<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="http://caseware.com/" target="_blank" title="visit caseware.com">caseware.com</a></div>
+			<div class="date">1999&ndash;2004</div>
+			<div class="description">Designed, developed, tested, deployed, and supported CaseWare Accounting and Auditing software.</div>
+		</div>
+		<div class="position">
+			<div class="title">Developer&nbsp;<i class="fas fa-laptop-code"></i></div>
+			<div class="location">CARIS<span class="hide">, Fredericton, New Brunswick</span></div>
+			<div class="link"><a href="http://caris.com/" target="_blank" title="visit caris.com">caris.com</a></div>
+			<div class="date">1996&ndash;1999</div>
+			<div class="description">Designed, developed, tested, deployed, and supported CARIS Geographic Information System software.</div>
+		</div>
+		<div class="position">
+			<div class="title">Student&nbsp;<i class="fas fa-university"></i></div>
+			<div class="location">DeVry<span class="hide">, Calgary, Alberta</span></div>
+			<div class="link"><a href="http://devry.ca/" target="_blank" title="visit devry.ca">devry.ca</a></div>
+			<div class="date">1993&ndash;1996</div>
+			<div class="description">Bachelor of Computer Science (Honors)</div>
+		</div>
+		<div class="position">
+			<div class="title">Trooper&nbsp;<i class="fas fa-shield-alt"></i></div>
+			<div class="location">The Queen's York Rangers<span class="hide">, Toronto, Ontario</span></div>
+			<div class="link"><a href="http://qyrang.ca/" target="_blank" title="visit qyrang.ca">qyrang.ca</a></div>
+			<div class="date">1993</div>
+			<div class="description">Qualification Level Three Armoured</div>
+		</div>
+		<div id="foot">
+			<p>Thank you for your time and consideration.</p>
+		</div>
+	</div>
+</body>
+</html>
